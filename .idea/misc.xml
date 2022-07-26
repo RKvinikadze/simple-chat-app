@@ -3,13 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/www.leptopi.ge/AndroidStudioProjects/simplechatapp/app/src/main/res/drawable-v24/msg_from.xml" value="0.245" />
+        <entry key="..\:/Users/www.leptopi.ge/AndroidStudioProjects/simplechatapp/app/src/main/res/drawable-v24/msg_from.xml" value="0.12" />
         <entry key="..\:/Users/www.leptopi.ge/AndroidStudioProjects/simplechatapp/app/src/main/res/drawable-v24/msg_to.xml" value="0.245" />
         <entry key="..\:/Users/www.leptopi.ge/AndroidStudioProjects/simplechatapp/app/src/main/res/layout/activity_chat.xml" value="0.1" />
         <entry key="..\:/Users/www.leptopi.ge/AndroidStudioProjects/simplechatapp/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/www.leptopi.ge/AndroidStudioProjects/simplechatapp/app/src/main/res/layout/layout.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/www.leptopi.ge/AndroidStudioProjects/simplechatapp/app/src/main/res/layout/message_from.xml" value="0.2" />
-        <entry key="..\:/Users/www.leptopi.ge/AndroidStudioProjects/simplechatapp/app/src/main/res/layout/message_to.xml" value="0.2" />
+        <entry key="..\:/Users/www.leptopi.ge/AndroidStudioProjects/simplechatapp/app/src/main/res/layout/message_from.xml" value="0.264" />
+        <entry key="..\:/Users/www.leptopi.ge/AndroidStudioProjects/simplechatapp/app/src/main/res/layout/message_to.xml" value="0.6" />
         <entry key="..\:/Users/www.leptopi.ge/AndroidStudioProjects/simplechatapp/app/src/main/res/layout/msg_from.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/www.leptopi.ge/AndroidStudioProjects/simplechatapp/app/src/main/res/layout/msg_to.xml" value="0.12360688956433637" />
       </map>

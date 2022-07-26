@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.TextView
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import java.sql.Timestamp
@@ -15,15 +16,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        findViewById<Button?>(R.id.open_chat_user1).setOnClickListener{
+        findViewById<Button?>(R.id.loginBtn).setOnClickListener{
             val chatActivity = Intent(this, ChatActivity::class.java)
-            chatActivity.putExtra("username", "rkvn99")
-            startActivity(chatActivity)
-        }
-
-        findViewById<Button?>(R.id.open_chat_user2).setOnClickListener{
-            val chatActivity = Intent(this, ChatActivity::class.java)
-            chatActivity.putExtra("username", "romiko11")
+            chatActivity.putExtra("username", findViewById<TextView>(R.id.username).text.toString())
             startActivity(chatActivity)
         }
     }

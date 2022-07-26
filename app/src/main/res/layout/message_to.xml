@@ -1,19 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp">
 
     <TextView
-        android:id="@+id/message_view"
+        android:id="@+id/msgUser"
+        android:text="user"
+        android:paddingLeft="5sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="12dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="5dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/msgView"
+        android:text="Message"
         android:background="@drawable/msg_to"
-        android:padding="10dp"
-        android:text="hello my name is gela"
-        android:textSize="25sp" />
-</RelativeLayout>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="240dp"
+        android:padding="15dp"
+        android:elevation="5dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/msgUser"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/msgTime"
+        android:text="12:00 PM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/msgView"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/msgView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

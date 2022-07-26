@@ -1,11 +1,9 @@
 package ge.tsu.project.simple_chat_app
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
-import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -38,6 +36,8 @@ class ChatActivity : AppCompatActivity() {
 
         getMessages()
 
+        print("++++++++++++++++++++++++ " + currentUser)
+
         title = currentUser
     }
 
@@ -55,7 +55,7 @@ class ChatActivity : AppCompatActivity() {
                         messageArrayList.add(message!!)
                     }
 
-                    messageRecyclerView.adapter = MyAdapter(messageArrayList, currentUser)
+                    messageRecyclerView.adapter = MessagesAdapter(messageArrayList, currentUser)
                 }
                 messageRecyclerView.layoutManager?.scrollToPosition(messageArrayList.size - 1)
             }
